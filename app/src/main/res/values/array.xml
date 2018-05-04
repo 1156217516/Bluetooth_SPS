@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car_put_array">
+		<item >一字型</item>
+		<item >并排型</item>
+    </string-array>
+    <string-array name="lingMin_array">
+        <item >高</item>
+        <item >中</item>
+        <item >低</item>
+        <item >极低</item>
+        <item >超级低</item>
+    </string-array>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+</resources>

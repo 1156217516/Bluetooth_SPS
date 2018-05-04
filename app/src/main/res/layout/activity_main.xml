@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.admin.bluetooth_sps.Ui.View.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:scrollbars="none"
+    xmlns:zf="http://schemas.android.com/apk/res-auto"
+    zf:rightPadding="100dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/menu_main_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB"
+            android:orientation="vertical">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#000"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#404040"/>
+            <include layout="@layout/tab_top1" />
+            <include layout="@layout/tab_top2" />
+            <FrameLayout
+                android:id="@+id/downloadFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_height="35dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/btn_bg2"
+                    android:elevation="0dp"
+                    android:text="@string/search"
+                    android:textColor="@color/orange_color1" tools:targetApi="lollipop" />
+                <Button
+                    android:id="@+id/btn_disconnect"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/btn_font_color"
+                    android:text="@string/disconnect"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/id_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <View
+                android:id="@+id/view_bottom"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.example.admin.bluetooth_sps.Ui.View.SlidingMenu>

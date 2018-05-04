@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/layout">
+    <Button
+        android:id="@+id/btn_select_file"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#caff70"
+        android:layout_weight="1"
+        android:text="@string/string18"/>
+    <TextView
+        android:id="@+id/filePath"
+        android:text="文件路径"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/tvInit"
+        android:text="NB复位"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tvSendByHand"
+        android:text="手动升级"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+
+</LinearLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EBEBEB">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/net_id_20"/>
+        <EditText
+            android:id="@+id/et_ID_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_province_net"
+            tools:ignore="LabelFor,NestedWeights" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/province_20"/>
+        <EditText
+            android:id="@+id/et_province_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_city_net"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/city_20"/>
+        <EditText
+            android:id="@+id/et_city_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_area_net"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/indi_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/area_20"/>
+        <EditText
+            android:id="@+id/et_area_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_street_net"
+            tools:ignore="LabelFor,NestedWeights" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/street_20"/>
+        <EditText
+            android:id="@+id/et_street_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_position_net"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/position_20"/>
+        <EditText
+            android:id="@+id/et_position_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:layout_marginEnd="5dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_ip1_net"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/indi_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/tv_FName_net"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/read_config_net1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/string7"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color" />
+
+        <Button
+            android:id="@+id/write_config_net1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/string8"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/indi_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/ip_20"/>
+        <EditText
+            android:id="@+id/et_ip1_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_ip2_net"
+            tools:ignore="LabelFor,NestedWeights" />
+        <EditText
+            android:id="@+id/et_ip2_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_ip3_net"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/et_ip3_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_ip4_net"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/et_ip4_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:layout_marginEnd="3dp"
+            style="@style/editText_style"
+            android:nextFocusForward="@+id/et_port_net"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/port_20"/>
+        <EditText
+            android:id="@+id/et_port_net"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:layout_marginEnd="5dp"
+            style="@style/editText_style"
+            android:maxLength="8"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/indi_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:ignore="RtlHardcoded">
+        <Button
+            android:id="@+id/read_config_net2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:gravity="center"
+            android:text="@string/string7"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color"
+            android:layout_marginRight="5dp"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/write_config_net2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/string8"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color"
+            android:layout_marginLeft="5dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/clear_net"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/string14"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_content_net"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_weight="4"
+        android:fadeScrollbars="false"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv_content_net"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:ignore="RtlHardcoded">
+        <Button
+            android:id="@+id/reset_net"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:gravity="center"
+            android:text="@string/string9"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/update_net"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/update_net_20"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/end_config_net"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/string11"
+            android:background="@drawable/button"
+            android:textColor="@color/btn_font_color"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>
