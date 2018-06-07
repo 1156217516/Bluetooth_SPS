@@ -29,7 +29,6 @@ public class BlueTooth_Devices extends Activity {
     public static String DEVICE_ADDRESS = "DEVICE_ADDRESS";
     public static String DEVICE_RSSI = "DEVICE_RSSI";
     private static final long SCAN_PERIOD = 10000;
-
     private ArrayList<Integer> rssis;             // 蓝牙信号强度
     private ListView lvService;
     private Handler mHandler;

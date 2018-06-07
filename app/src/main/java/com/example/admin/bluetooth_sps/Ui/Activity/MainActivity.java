@@ -115,6 +115,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private int mMenuWidth;
 
     //左侧菜单
+    private RelativeLayout menuLayoutLogin;
+    private RelativeLayout menuLayoutRegister;
     private RelativeLayout menuLayoutChangeMain;
     private LinearLayout menuLayoutAbout;
 
@@ -320,8 +322,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
         //左侧菜单
+        menuLayoutLogin=(RelativeLayout) findViewById(R.id.RL_login);
+        menuLayoutRegister=(RelativeLayout) findViewById(R.id.RL_register);
         menuLayoutChangeMain=(RelativeLayout) findViewById(R.id.menu_layout_change_main);
         menuLayoutAbout=(LinearLayout) findViewById(R.id.menu_layout_about);
+        menuLayoutLogin.setEnabled(false);
+        menuLayoutRegister.setEnabled(false);
         menuLayoutChangeMain.setEnabled(false);
         menuLayoutAbout.setEnabled(false);
     }
@@ -334,6 +340,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         btnDisconnect.setEnabled(false);
 
         //左侧菜单
+        menuLayoutLogin.setOnClickListener(this);
+        menuLayoutRegister.setOnClickListener(this);
         menuLayoutChangeMain.setOnClickListener(this);
         menuLayoutAbout.setOnClickListener(this);
     }
@@ -523,9 +531,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         boolean b=messageEvent.getMessage();
         //右划
         if(b){
+            menuLayoutLogin.setEnabled(true);
+            menuLayoutRegister.setEnabled(true);
             menuLayoutChangeMain.setEnabled(true);
             menuLayoutAbout.setEnabled(true);
         }else {
+            menuLayoutLogin.setEnabled(false);
+            menuLayoutRegister.setEnabled(false);
             menuLayoutChangeMain.setEnabled(false);
             menuLayoutAbout.setEnabled(false);
         }
@@ -870,7 +882,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 tvTab1.setBackgroundColor(Color.parseColor("#969696"));
                 tvTab2.setBackgroundColor(Color.parseColor("#62CC74"));
                 break;
+            case R.id.RL_login:
 
+                break;
+            case R.id.RL_register:
+
+                break;
             case R.id.menu_layout_change_main:
                 final int[] index = {0};
                 android.app.AlertDialog.Builder builder=new android.app.AlertDialog.Builder(this);
@@ -945,6 +962,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.menu_layout_about:
                 startActivity(new Intent(this,AboutActivity.class));
                 break;
+
+
             default:
                 break;
         }

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--#3F51B5-->
+    <color name="light_sky_blue">#FFC0CB</color>
+    <color name="blue2">#738ffe</color>
+    <color name="login_background">#50ffffff</color>
+    <color name="login_background_press">#70ffffff</color>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>

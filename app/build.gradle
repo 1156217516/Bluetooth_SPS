@@ -4,12 +4,15 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
 
+    /**兼容Android6.0系统所需，如果这句话报错，可在dependencies标签下使用compile 'cn.bmob.android:http-legacy:1.0'**/
+    useLibrary 'org.apache.http.legacy'
+
     defaultConfig {
         applicationId "com.example.admin.bluetooth_sps"
         minSdkVersion 18
         targetSdkVersion 26
-        versionCode 14
-        versionName "1.1.4"
+        versionCode 15
+        versionName "1.1.5"
     }
     buildTypes {
         release {
@@ -28,5 +31,7 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.0.0'
     implementation files('libs/xUtils-2.6.14.jar')
     implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+
+    compile 'cn.bmob.android:bmob-sdk:3.6.2'
 
 }

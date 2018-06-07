@@ -1,4 +1,7 @@
 <resources>
+    <string name="password">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="username">用户名</string>
+    <string name="login">登&#160;&#160;&#160;&#160;录</string>
     <string name="app_name">SPS蓝牙版</string>
     <string name="tab1">2.0车位检测器</string>
     <string name="tab2">2.0车位网关</string>

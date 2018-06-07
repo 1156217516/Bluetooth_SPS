@@ -13,6 +13,7 @@
         tools:ignore="UselessParent">
 
         <RelativeLayout
+            android:id="@+id/RL_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -39,6 +40,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/RL_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">

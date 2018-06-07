@@ -18,6 +18,8 @@ import com.example.admin.bluetooth_sps.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * Created by Administrator on 2018/4/28/028.
  */
@@ -41,8 +43,9 @@ public class BaseActivity extends AppCompatActivity {
     private boolean isNeedCheck = true;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bmob.initialize(this, "2f52f94940fa9b3696e811213f693941");
     }
 
     @Override
